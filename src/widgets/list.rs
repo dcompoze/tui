@@ -18,6 +18,10 @@ impl ListState {
         self.selected
     }
 
+    pub fn offset(&self) -> usize {
+        self.offset
+    }
+
     pub fn select(&mut self, index: Option<usize>) {
         self.selected = index;
         if index.is_none() {
